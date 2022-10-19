@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +11,13 @@
             margin: 0;
             padding: 0;
         }
+        
         body {
             /* background-color: aqua; */
         }
-        h1 { 
-            display: inline;
+        
+        h1 {
+            /* display: inline; */
             /* margin-top: 100px; */
             margin: 30px;
             border: rgb(2, 2, 15) 1px solid;
@@ -25,8 +28,9 @@
             line-height: 80px;
             text-align: center;
         }
+        
         p {
-            display: inline;
+            /* display: inline; */
             padding: 23px;
             margin: 20px;
             width: 100%;
@@ -34,13 +38,24 @@
             opacity: 0.2;
             color: grey;
         }
+        
         a {
             background-color: aquamarine;
             /* display: block; */
             color: red;
         }
+        
+        td {
+            border: 1px red solid;
+        }
+        
+        table {
+            border: 5px yellow solid;
+            border-collapse: collapse;
+        }
     </style>
 </head>
+
 <body>
     <h1>Testing</h1>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt sapiente, tempora tempore laudantium rem, consectetur inventore corrupti natus, odit necessitatibus magni? Magni beatae dolores, totam distinctio accusamus quibusdam facere esse.</p>
@@ -50,5 +65,135 @@
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias hic maiores, consectetur soluta necessitatibus facilis? Soluta, quos veniam modi temporibus assumenda corrupti doloremque, quidem, accusantium ipsam maxime exercitationem deserunt perspiciatis?</p>
     <a href="">see more</a>
     <a href="">next post</a>
+    <br>
+    <table>
+        <tr>
+            <td>Myanmar</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>40</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>Data 1</th>
+            <th style="background-color: yellow">Data 2</th>
+        </tr>
+        <tr>
+            <td>Calcutta</td>
+            <td style="background-color: green">Orange</td>
+        </tr>
+        <tr>
+            <td>Robots</td>
+            <td style="background-color: red">Jazz</td>
+        </tr>
+    </table>
+    <table>
+        <colgroup>
+            <col style="background-color: red" colspan="2" />
+            <col />
+            <col />
+        </colgroup>
+        <tr>
+            <th>Data 1</th>
+            <th>Data 2</th>
+            <th>Data 3</th>
+        </tr>
+        <tr>
+            <td>Calcutta</td>
+            <td>Orange</td>
+            <td>Song</td>
+        </tr>
+        <tr>
+            <td>Robots</td>
+            <td>Jazz</td>
+            <td>Video</td>
+        </tr>
+    </table>
+    <table style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <td>Jill</td>
+            <td>Eve</td>
+        </tr>
+        <tr>
+            <th>Lastname</th>
+            <td>Smith</td>
+            <td>Jackson</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>94</td>
+            <td>50</td>
+        </tr>
+    </table>
+    <table style="border: 1px blue solid">
+        <tr>
+            <td colspan="2">Name</td>
+            <td>Age</td>
+
+        </tr>
+        <tr>
+            <td>Maung</td>
+            <td>Maung</td>
+            <td>29</td>
+
+        </tr>
+        <tr>
+            <td>Aung</td>
+            <td>Aung</td>
+            <td>39</td>
+        </tr>
+    </table>
+    <table style="border: 1px solid black;">
+        <colgroup>
+            <col span="2" />
+            <col span="2" style="background-color: red;" />
+        </colgroup>
+        <tr>
+            <td>HI</td>
+            <td>hello</td>
+            <td>morning</td>
+            <td>Goodnight</td>
+        </tr>
+        <tr>
+            <td>HI</td>
+            <td>hello</td>
+            <td>morning</td>
+            <td>Goodnight</td>
+        </tr>
+        <tr>
+            <td>HI</td>
+            <td>hello</td>
+            <td>morning</td>
+            <td>Goodnight</td>
+        </tr>
+        <tr>
+            <td>HI</td>
+            <td>hello</td>
+            <td>morning</td>
+            <td>Goodnight</td>
+        </tr>
+    </table>
 </body>
+
 </html>
