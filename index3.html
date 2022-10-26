@@ -7,20 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AZP</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: rgb(240, 240, 231);
+        }
+        
         div {
-            border: 1px black solid;
+            border: 1px rgb(102, 99, 99) solid;
             margin: 2px;
         }
         
         #title {
+            background-color: #8d8d8c;
+            box-shadow: 10px 5px 5px rgb(87, 83, 83);
             text-align: center;
             width: 40%;
-            margin: 2px 30%;
+            margin: 10px 30%;
         }
         
         #slogan {
+            /* background-color: aliceblue; */
             width: 50%;
-            margin: 2px 25%;
+            margin: 2em 22%;
+            padding: 20px;
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
         }
         
         #biography {
@@ -40,6 +54,45 @@
             clear: both;
             margin-left: 5%;
         }
+        
+        #slogan p {
+            animation-duration: 3s;
+            animation-name: slidein;
+        }
+        
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 120%;
+            }
+            75% {
+                font-size: 150%;
+                margin-left: 25%;
+                width: 110%;
+            }
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+        
+        .sub-title {
+            animation-duration: 3s;
+            animation-name: slidein;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+        }
+        
+        @keyframes slidein {
+            from {
+                margin-left: 50%;
+                width: 300%;
+            }
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -55,14 +108,14 @@
         </p>
     </div>
     <div id="biography">
-        <h3>Biography</h3>
+        <h3 class="sub-title">Biography</h3>
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. At explicabo numquam error laboriosam ipsum magnam praesentium nesciunt illo possimus repellat excepturi sint, velit officia itaque quod, eius dolores repudiandae quos! Lorem ipsum dolor sit amet
             consectetur, adipisicing elit. Fugiat totam enim, nulla debitis, veniam in exercitationem cupiditate ex eos, itaque reiciendis dolor labore expedita nisi corporis ut beatae. Incidunt, placeat!
         </p>
     </div>
     <div id="education">
-        <h3>Education</h3>
+        <h3 class="sub-title">Education</h3>
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. At explicabo numquam error laboriosam ipsum magnam praesentium nesciunt illo possimus repellat excepturi sint, velit officia itaque quod, eius dolores repudiandae quos! Lorem ipsum dolor sit amet
             consectetur, adipisicing elit. Fugiat totam enim, nulla debitis, veniam in exercitationem cupiditate ex eos, itaque reiciendis dolor labore expedita nisi corporis ut beatae. Incidunt, placeat!
