@@ -31,6 +31,8 @@
         
         #slogan {
             /* background-color: aliceblue; */
+            background: rgb(219, 226, 24);
+            background: linear-gradient(90deg, rgb(238, 241, 214) 0%, rgb(248, 248, 233) 35%, rgb(252, 251, 247) 100%);
             width: 50%;
             margin: 2em 22%;
             padding: 20px;
@@ -77,21 +79,75 @@
         }
         
         .sub-title {
+            animation-delay: 3s;
             animation-duration: 3s;
-            animation-name: slidein;
-            animation-iteration-count: 3;
+            animation-name: title-slidein;
+            animation-iteration-count: infinite;
             animation-direction: alternate;
         }
         
-        @keyframes slidein {
+        @keyframes title-slidein {
             from {
-                margin-left: 50%;
+                margin-left: 0%;
                 width: 300%;
             }
             to {
-                margin-left: 0%;
+                margin-left: 40%;
                 width: 100%;
             }
+        }
+        
+        #main {
+            width: 700px;
+            height: 300px;
+            border: 1px solid #c3c3c3;
+            display: flex;
+            /* flex-flow: column wrap; */
+            flex-direction: row;
+            /*default */
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: space-between;
+            /* align-items: center; */
+            /* justify-items: flex-end; */
+            /*not working*/
+        }
+        
+        #main div {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            /* align-content: center; */
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #div1 {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            margin-left: 60px;
+            border: 1px solid blue;
+            perspective: 100px;
+        }
+        
+        #div2,
+        #div4 {
+            padding: 50px;
+            position: absolute;
+            border: 1px solid black;
+            background: rgba(100, 100, 100, 0.5);
+            transform-style: preserve-3d;
+            transform: rotateX(45deg);
+        }
+        
+        #div3 {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            margin-left: 60px;
+            border: 1px solid blue;
+            perspective: none;
         }
     </style>
 </head>
@@ -129,6 +185,25 @@
         </p>
     </div>
     <div>Table</div>
+    <h1>The align-content Property</h1>
+
+    <div id="main">
+        <div style="background-color:coral; height: 30px;">hi</div>
+        <div style="background-color:lightblue; writing-mode: sideways-rl;">hello</div>
+        <div style="background-color:pink; height: 20px;">hola</div>
+    </div>
+    <h1>The perspective Property</h1>
+
+    <h2>perspective: 100px:</h2>
+    <div id="div1">DIV1
+        <div id="div2">DIV2</div>
+    </div>
+
+    <h2>perspective: none:</h2>
+    <div id="div3">DIV3
+        <div id="div4">DIV4</div>
+    </div>
+
 </body>
 
 </html>
