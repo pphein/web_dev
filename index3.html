@@ -27,6 +27,8 @@
             text-align: center;
             width: 40%;
             margin: 10px 30%;
+            position: sticky;
+            top: 20px;
         }
         
         #slogan {
@@ -66,15 +68,18 @@
             from {
                 margin-left: 100%;
                 width: 120%;
+                color: green;
             }
             75% {
                 font-size: 150%;
                 margin-left: 25%;
                 width: 110%;
+                color: red;
             }
             to {
                 margin-left: 0%;
                 width: 100%;
+                color: blue;
             }
         }
         
@@ -100,14 +105,14 @@
         #main {
             width: 700px;
             height: 300px;
-            border: 1px solid #c3c3c3;
+            border: 1px solid #a50f0f;
             display: flex;
             /* flex-flow: column wrap; */
             flex-direction: row;
             /*default */
             flex-wrap: wrap;
-            align-content: center;
-            justify-content: space-between;
+            align-content: space-between;
+            /* justify-content: space-evenly; */
             /* align-items: center; */
             /* justify-items: flex-end; */
             /*not working*/
@@ -134,7 +139,7 @@
         #div2,
         #div4 {
             padding: 50px;
-            position: absolute;
+            /* position: absolute; */
             border: 1px solid black;
             background: rgba(100, 100, 100, 0.5);
             transform-style: preserve-3d;
@@ -189,7 +194,7 @@
 
     <div id="main">
         <div style="background-color:coral; height: 30px;">hi</div>
-        <div style="background-color:lightblue; writing-mode: sideways-rl;">hello</div>
+        <div style="background-color:lightblue;">hello</div>
         <div style="background-color:pink; height: 20px;">hola</div>
     </div>
     <h1>The perspective Property</h1>
